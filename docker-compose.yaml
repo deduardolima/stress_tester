@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  stress-tester:
+    build: .
+    network_mode: "bridge"
+    command: ["--url=https://www.globo.com", "--requests=1000", "--concurrency=10"]
+
