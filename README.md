@@ -53,16 +53,14 @@ docker-compose up --build -d
 ```
 
 isso irá construir a imagem do aplicativo e iniciar o serviço definido no docker-compose.yml, 
-e ja iniciará um teste com  1000 requisições para https://www.globo.com sendo 10 simultaneamente.
-
 
 ## Execucão 
 
 Agora é só utilizar!
-- Escolha sua URL de teste e inclua no comando abaixo:
+- Vamos realizar teste com 1000 requisições para o Google conforme o comando abaixo:
 
 ```
-docker run stress-tester-stress-tester --url=https://teste.com --requests=1000 --concurrency=10
+docker run stress-tester-stress-tester --url=https://google.com --requests=1000 --concurrency=10
 
 ```
 
